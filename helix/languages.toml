@@ -1,0 +1,48 @@
+[[language]]
+name = "java"
+indent = { tab-width = 4, unit = "    " }
+formatter = { command = "google-java-format", args = ["-"] }
+auto-format = true
+language-servers = ["jdtls", "lsp-ai"]
+
+
+[language-server.jdtls]
+command = "jdtls"
+args = [
+  "--jvm-arg=-javaagent:/home/fizlrock/Games/jars/lombok-1.18.34.jar",
+]
+
+[[language]]
+name = "xml"
+auto-format = true
+formatter = { command = "xmllint", args = ["--format", "-"] }
+
+
+
+
+##############################
+## Configuration for lsp-ai ##
+##############################
+
+[language-server.lsp-ai]
+command = "lsp-ai"
+
+[language-server.lsp-ai.config.memory]
+file_store = { }
+
+[language-server.lsp-ai.config.models.model1]
+type = "ollama"
+model = "gemma3:4b"
+
+[language-server.lsp-ai.config.completion]
+model = "model1"
+
+[language-server.lsp-ai.config.completion.parameters]
+max_tokens = 32
+max_context = 1024
+
+
+#################################
+## Configuration for languages ##
+#################################
+## Configure other languages here

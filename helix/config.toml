@@ -1,0 +1,116 @@
+theme = "cyan_light"
+
+[editor]
+cursorline = true
+color-modes = true
+line-number = "relative"
+mouse = false
+auto-format=true
+end-of-line-diagnostics = "hint"
+
+[editor.inline-diagnostics]
+cursor-line = "error"
+
+[editor.lsp]
+display-inlay-hints = true
+
+[editor.soft-wrap]
+enable = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[keys.normal]
+n="move_char_left"
+N="move_char_left"
+
+e="move_line_down"
+E="move_line_down"
+
+i="move_line_up"
+I="move_line_up"
+
+o="move_char_right"
+O="move_char_right"
+
+j="search_next"
+J="search_prev"
+
+k="move_next_word_end"
+K="move_next_long_word_end"
+
+l="insert_mode"
+L="insert_at_line_start"
+
+
+y="open_below"
+Y="open_above"
+
+h="yank"
+
+[keys.normal.g]
+n="goto_line_start"
+o="goto_line_end"
+
+[keys.normal.space]
+e = ":sh gradle compileJava"
+
+[keys.normal.space.w]
+n="jump_view_left"
+e="jump_view_down"
+i="jump_view_up"
+o="jump_view_right"
+
+[keys.normal.C-w]
+n="jump_view_left"
+e="jump_view_down"
+E="join_selections"
+"A-E"="join_selections_space"
+
+
+i="jump_view_up"
+I="keep_selections"
+"A-I"="remove_selections"
+
+o="jump_view_right"
+
+[keys.insert]
+"A-x" = "normal_mode"
+
+[keys.select]
+n="move_char_left"
+N="move_char_left"
+
+e="move_line_down"
+E="move_line_down"
+
+i="move_line_up"
+I="move_line_up"
+
+o="move_char_right"
+O="move_char_right"
+
+j="search_next"
+J="search_prev"
+
+k="move_next_word_end"
+K="move_next_long_word_end"
+
+l="insert_mode"
+L="insert_at_line_start"
+
+y="open_below"
+Y="open_above"
+
+h="yank"
+
+
+
+
+
+
+
+
+
