@@ -1,4 +1,6 @@
-theme = "cyan_light"
+# theme = "cyan_light"
+# theme = "dark_plus"
+theme = "term16_dark"
 
 [editor]
 cursorline = true
@@ -24,16 +26,15 @@ select = "underline"
 
 [keys.normal]
 n="move_char_left"
-N="move_char_left"
 
 e="move_line_down"
-E="move_line_down"
 
 i="move_line_up"
-I="move_line_up"
 
 o="move_char_right"
-O="move_char_right"
+
+E="shrink_selection"
+I="expand_selection"
 
 j="search_next"
 J="search_prev"
@@ -54,15 +55,14 @@ h="yank"
 n="goto_line_start"
 o="goto_line_end"
 
-[keys.normal.space]
-e = ":sh gradle compileJava"
+# [keys.normal.space]
+# e = ":sh gradle compileJava"
 
 [keys.normal.space.w]
 n="jump_view_left"
 e="jump_view_down"
 i="jump_view_up"
 o="jump_view_right"
-
 [keys.normal.C-w]
 n="jump_view_left"
 e="jump_view_down"
